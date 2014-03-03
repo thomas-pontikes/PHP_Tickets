@@ -1,5 +1,5 @@
 
-<? php
+<?php
   
 echo $_GET['ticket_holder_name'];
 echo $_GET['ticket_date'] ;
