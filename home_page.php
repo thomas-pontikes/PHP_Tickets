@@ -1,4 +1,4 @@
-<?php>
+<?php
 include'./head.php'
 include'.protect_page.php'
 ?>
@@ -109,6 +109,6 @@ include'.protect_page.php'
     </div> <!-- /container -->
 
 
-	<?php>
+	<?php
 	include'./foot.php'
 	?>
