@@ -32,7 +32,7 @@ include './head.php';
 <br/>
 <br/>
 	
-	<h1> Black PPL smell... and Kaela is a GAY FUCK BOI </h1></br><small>that is all<small>
+	<h1> Black PPL smell...</h1></br><small>that is all<small>
 	</br>
 	</br>
 	</br>
