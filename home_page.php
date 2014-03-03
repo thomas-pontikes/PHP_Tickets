@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 <?php>
 include'./head.php'
+=======
+<?php
+include'./head.php';
+include'.protect_page.php';
+
+>>>>>>> FETCH_HEAD
 ?>
    <!-- Fixed navbar -->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -86,6 +93,6 @@ include'./head.php'
     </div> <!-- /container -->
 
 
-	<?php>
+	<?php
 	include'./foot.php'
 	?>
