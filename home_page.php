@@ -1,6 +1,7 @@
 <?php
-include'./head.php'
-include'.protect_page.php'
+include'./head.php';
+include'.protect_page.php';
+
 ?>
 <!DOCTYPE HTML>
 <html lang="en-US">
