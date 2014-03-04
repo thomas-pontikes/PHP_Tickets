@@ -37,33 +37,69 @@ include'./head.php'
 			
 
 		<input type="text" name="ticket_holder_name" class="form-controls" placeholder="Ticket Holder Name" 
+
 /><br><br/>	
-		<input type="text" id="datepicker" 
-/><br><br/>
+
+		<div id="datetimepicker" class="input-append date">
+	      <input type="text" name="ticket_date"></input>
+	      <span class="add-on">
+	        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+	      </span>
+	    </div>
+	    <script type="text/javascript"
+	     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+	    </script> 
+	    <script type="text/javascript"
+	     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+	    </script>
+	    <script type="text/javascript"
+	     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+	    </script>
+	    <script type="text/javascript"
+	     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+	    </script>
+	    <script type="text/javascript">
+	      $('#datetimepicker').datetimepicker({
+	        format: 'dd/MM/yyyy',
+	        language: 'en'
+			
+			
+	      });
+	    </script> 
+
+<br><br/>
+
 		<input type="text" name="ticket_time" class="form-controls" placeholder="Ticket Time" 
+
 /><br><br/>
-	
+
 		Ticket Origin<select class="form-control input-sm" name="ticket_origin" width="200" style="width: 200px">
 		  <option>STORRS UNIV OF CT CT</option>
 		  <option>HARTFORD CT</option>
 		  <option>WATERBURY CT</option>
 		  <option>PROVIDENCE BZ RI</option>
 		</select> 
+
 <br><br/>
+
 		Destination<select class="form-control input-sm" name="destination" width="200" style="width: 200px">>
 		  <option>STORRS UNIV OF CT CT</option>
 		  <option>HARTFORD CT</option>
 		  <option>WATERBURY CT</option>
 		  <option>PROVIDENCE BZ RI</option>
 		</select>
+
 <br><br/>
+
 		Destination Point<select class="form-control input-sm" name="destination_point" width="200" style="width: 200px">
 		  <option>STORRS UNIV OF CT CT</option>
 		  <option>HARTFORD CT</option>
 		  <option>WATERBURY CT</option>
 		  <option>PROVIDENCE BZ RI</option>
 		</select>
+
 <br><br/>
+
 
 
 
