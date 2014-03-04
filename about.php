@@ -26,13 +26,13 @@ include './head.php';
   </div>
 </div>
 
-<div class="container" align="left">
+<div class="container" align="center">
 <br/>
 <br/>
 <br/>
 <br/>
 	
-	<h1>===Black PPL smell===...</h1></br><small>that is all<small>
+	<img src="IMG_7522.png" width="250">
 	</br>
 	</br>
 	</br>
