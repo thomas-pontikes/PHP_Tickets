@@ -36,7 +36,10 @@ include './head.php';
 	</br>
 	</br>
 	</br>
-	
+	<iframe class="vine-embed" src="https://vine.co/v/hP52M9BtFUv/embed/simple?audio=1" width="480" height="480" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+	</br>
+	</br>
+	</br>
 	<a href='http://www.pornhub.com'><button type="button" class="btn btn-danger">Dont Press me!!</button></a>
 	</br>
 	</br>
