@@ -31,11 +31,6 @@ include './head.php';
 <br/>
 <br/>
 <br/>
-	
-	<img src="IMG_7522.png" width="250">
-	</br>
-	</br>
-	</br>
 	<iframe class="vine-embed" src="https://vine.co/v/hP52M9BtFUv/embed/simple?audio=1" width="480" height="480" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
 	</br>
 	</br>
