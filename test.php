@@ -1,6 +1,7 @@
+<!DOCTYPE HTML>
 <html>
-<body>
-<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen"
      href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
   </head>
@@ -25,9 +26,9 @@
     </script>
     <script type="text/javascript">
       $('#datetimepicker').datetimepicker({
-        format: 'dd/MM/yyyy',
-        language: 'en'
+        format: 'dd/MM/yyyy hh:mm:ss',
+        language: 'pt-BR'
       });
     </script>
-</body>
-</html>
+  </body>
+<html>
