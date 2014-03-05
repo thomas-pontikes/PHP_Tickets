@@ -60,7 +60,7 @@ include'./head.php'
 	    </script>
 	    <script type="text/javascript">
 	      $('#datetimepicker').datetimepicker({
-	        format: 'dd/MM/yyyy',
+	        format: 'MM/dd/yyyy',
 	        language: 'en'
 			
 			
