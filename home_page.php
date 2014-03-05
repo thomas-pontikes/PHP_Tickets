@@ -36,14 +36,20 @@ include'./head.php'
 <form action="ticket_create_action.php" method="GET">
 			
 
-		<input type="text" name="ticket_holder_name" class="form-controls" placeholder="Ticket Holder Name" 
+		<input type="text" name="ticket_holder_name" class="form-controls" placeholder="Ticket Holder Name" >
 
-/><br><br/>	
+</br></br>
 
-		<div id="datetimepicker" class="input-append date">
-	      <input type="text" name="ticket_date"></input>
+		    <input type="text" name="ticket_price" class="form Controls input-small" placeholder="Price $">
+
+
+</br></br>	
+
+		<div id="datetimepicker" class="append date">
+	      <input type="text" name="ticket_date"
+	class="input-small" placeholder="Date"></input>
 	      <span class="add-on">
-	        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+	        <i data-time-icon="icon-time" data-date-icon="icon-calendar">
 	      </span>
 	    </div>
 	    <script type="text/javascript"
@@ -67,11 +73,28 @@ include'./head.php'
 	      });
 	    </script> 
 
-<br><br/>
+</br>
 
-		<input type="text" name="ticket_time" class="form-controls" placeholder="Ticket Time" 
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" href="css/bootstrap.min.css" />
+        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-2.2.2.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+    </head>
+    <body>
+        <div class="input-append bootstrap-timepicker">
+            <input id="timepicker1" type="text" name="ticket_time" class="input-small" placeholder="Time">
+            <span><i class="icon-time"></i></span>
+        </div>
+ 
+        <script type="text/javascript">
+            $('#timepicker1').timepicker();
+        </script>
+    </body>
+</br></br>
 
-/><br><br/>
 
 		Ticket Origin<select class="form-control input-sm" name="ticket_origin" width="200" style="width: 200px">
 		  <option>STORRS UNIV OF CT CT</option>
@@ -79,6 +102,11 @@ include'./head.php'
 		  <option>WATERBURY CT</option>
 		  <option>PROVIDENCE BZ RI</option>
 		</select> 
+
+
+
+
+
 
 <br><br/>
 
@@ -89,6 +117,12 @@ include'./head.php'
 		  <option>PROVIDENCE BZ RI</option>
 		</select>
 
+
+
+
+
+
+
 <br><br/>
 
 		Destination Point<select class="form-control input-sm" name="destination_point" width="200" style="width: 200px">
@@ -97,6 +131,9 @@ include'./head.php'
 		  <option>WATERBURY CT</option>
 		  <option>PROVIDENCE BZ RI</option>
 		</select>
+
+
+
 
 <br><br/>
 
