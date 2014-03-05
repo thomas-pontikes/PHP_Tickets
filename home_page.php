@@ -105,9 +105,6 @@ include'./head.php'
 
 
 
-
-
-
 <br><br/>
 
 		Destination<select class="form-control input-sm" name="destination" width="200" style="width: 200px">>
@@ -116,10 +113,6 @@ include'./head.php'
 		  <option>WATERBURY CT</option>
 		  <option>PROVIDENCE BZ RI</option>
 		</select>
-
-
-
-
 
 
 
@@ -133,12 +126,7 @@ include'./head.php'
 		</select>
 
 
-
-
 <br><br/>
-
-
-
 
 
 		<input type="submit"class="btn btn-primary" value="Submit" />
@@ -158,6 +146,11 @@ include'./head.php'
 
 
     </div> <!-- /container -->
+
+
+
+
+
 
 
 	<?php

@@ -1,5 +1,4 @@
 </div>
-<div id="home_subheader" style="height: 100%">
     <div class="clear"></div>
 </div>
 <div id="home_subheader_buttons">

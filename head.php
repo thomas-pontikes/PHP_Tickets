@@ -15,10 +15,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		        <link type="text/css" href="css/bootstrap.min.css" />
 		        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
-		        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		        <script type="text/javascript" src="js/bootstrap-2.2.2.min.js"></script>
-		        <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
-	
+		       
 <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" media="screen"
