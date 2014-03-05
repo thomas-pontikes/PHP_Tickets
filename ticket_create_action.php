@@ -8,6 +8,8 @@ echo $_GET['ticket_origin'] ;
 echo $_GET['destination'];
 echo $_GET['destination_point'] ;
 	
+	
+include './ticket.php';
 		
 
 
