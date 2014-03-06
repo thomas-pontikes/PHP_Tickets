@@ -1,8 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- saved from url=(0095)https://ws.peterpanbus.com/purchase/(S(slakvtjou4h3njhxnrwoe2yn))/reprint.aspx?confnum=23941501 -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class=" webkit chrome mac js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
-	Peter Pan Bus Lines
-</title><meta http-equiv="X-UA-Compatible" content="IE=9">
+
     <style type="text/css">
         .ui-datepicker
         {

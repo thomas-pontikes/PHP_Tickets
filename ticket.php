@@ -5,56 +5,8 @@ $conf=rand(22345669,29999999);
 
 ?>
 
-	<div id="wrapper">
-        <!-- HEADER -->
-        <div id="header">
-            <div id="header_left">
-                <a href="http://www.peterpanbus.com/">
-				 <img src="./ticket_files/home_link.gif" title="Home" alt="Home"></a>
-</div>
-
-            <!--header_left-->
-            <div id="header_right">
-                <div id="top_nav">
-                    <div class="menu-top-nav-container">
-                        <ul id="menu-top-nav" class="menu">
-                            <li id="menu-item-5634" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-225 current_page_item menu-item-5634">
-                                <a href="http://support.peterpanbus.com/home" title="FAQs">FAQs</a>
-                            </li>
-                            <li id="menu-item-5637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5637">
-                                <a href="http://peterpanbus.com/tickets/tickets-schedules/print-e-tickets/" title="Print E-Tickets">Print E-Tickets</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="topSocialMedia">
-                    <a target="_blank" id="topFb" href="http://www.facebook.com/peterpanbuslines">
-                        <img alt="Become A Facebook Fan" title="Become A Facebook Fan" src="./ticket_files/facebook.png">
-                    </a>
-                    <a target="_blank" id="topTw" href="http://www.twitter.com/peterpanbus">
-                        <img alt="Follow Us On Twitter" title="Follow Us On Twitter" src="./ticket_files/twitter.png">
-                    </a>
-                </div>
-                <!--top_nav-->
-                <div class="clear"></div>
-                <div id="search">
-                    <form method="get" id="searchform" action="http://www.peterpanbus.com/">
-                        <div>
-                            <input type="text" value="" name="s" id="s">
-                            <input type="submit" id="searchsubmit" value="Search">
-                        </div>
-                    </form>
-                </div>
-                <!--search-->
-            </div>
-            <!--header_right-->
-        </div>
-        <!--header-->
-        <div class="clear"></div>
-
-        <!-- MAIN NAVIGATION -->
-        <div id="main_nav" style="height: 31px">
-        </div>
+	 
+       
         <!--main_nav-->
         <div class="clear"></div>
         <div id="white">
