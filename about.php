@@ -1,5 +1,6 @@
 <?php>
 include './head.php';
+session_start
 ?>
 
 
@@ -19,7 +20,7 @@ include './head.php';
     <a class="navbar-brand" href="./index.php">phpTicket</a>
 	<div class="navbar-collapse collapse">
        <ul class="nav navbar-nav">
-        <li><a href="index.php">Home</a></li>
+        <li><a href="home_page.php">Home</a></li>
         <li class="active"><a href="./about.php">About</a></li>
 
     </div><!--/.nav-collapse -->
@@ -47,7 +48,7 @@ include './head.php';
 	
 		</form>
 		
-		<?php>
+		<?php
 		include './foot.php';
 		?>
 
