@@ -24,14 +24,15 @@ include'./head.php'
   </div>
 </div>
 
-    <div class="container" align="left">
+
+	<div class="container" align="left">
 	<br/>
 	<br/>
 	<br/>
 	<br/>
-	<h1>Ticket Generator</h1><small>Please input information to generate a ticket<br/> Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </b></a> online schedule to determine the number of transfers (if any).</small>
+	<h1>Ticket Generator</h1><small>Please input information to generate a ticket<br/> Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </b></a> online schedule to determine the number of transfers (if any).<br></small>
 	<br/>
-	<br/>
+	
 	
 <form action="ticket_create_action.php" method="GET">
 			
@@ -96,7 +97,7 @@ include'./head.php'
 </br></br>
 
 
-		Ticket Origin<select class="form-control input-sm" name="ticket_origin" width="200" style="width: 200px">
+		Initial Departure Location<select class="form-control input-sm" name="ticket_origin" width="200" style="width: 200px">
 		  <option>STORRS UNIV OF CT CT</option>
 		  <option>HARTFORD CT</option>
 		  <option>WATERBURY CT</option>
@@ -107,7 +108,7 @@ include'./head.php'
 
 <br><br/>
 
-		Destination<select class="form-control input-sm" name="destination" width="200" style="width: 200px">>
+		Final Destination<select class="form-control input-sm" name="ticket_destination" width="200" style="width: 200px">>
 		  <option>STORRS UNIV OF CT CT</option>
 		  <option>HARTFORD CT</option>
 		  <option>WATERBURY CT</option>
@@ -118,7 +119,13 @@ include'./head.php'
 
 <br><br/>
 
-		Destination Point<select class="form-control input-sm" name="destination_point" width="200" style="width: 200px">
+<p>When scheduling a bus that requires a transfer multiple tickets must be generated <br>
+	The "Origin" and "Destination" change depending on where the bus transfer is located</p>
+	<br>
+	
+
+
+		Origin<select class="form-control input-sm" name="trip_origin" width="200" style="width: 200px">
 		  <option>STORRS UNIV OF CT CT</option>
 		  <option>HARTFORD CT</option>
 		  <option>WATERBURY CT</option>
@@ -126,8 +133,17 @@ include'./head.php'
 		</select>
 
 
+
 <br><br/>
 
+	Destination<select class="form-control input-sm" name="trip_destination" width="200" style="width: 200px">
+	  <option>STORRS UNIV OF CT CT</option>
+	  <option>HARTFORD CT</option>
+	  <option>WATERBURY CT</option>
+	  <option>PROVIDENCE BZ RI</option>
+	</select>
+
+<br><br/>
 
 		<input type="submit"class="btn btn-primary" value="Submit" />
 
