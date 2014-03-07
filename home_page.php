@@ -96,7 +96,6 @@ include'./head.php'
     </body>
 </br></br>
 
-
 		Initial Departure Location<select class="form-control input-sm" name="ticket_origin" width="200" style="width: 200px">
 		  <option>STORRS UNIV OF CT CT</option>
 		  <option>HARTFORD CT</option>
@@ -170,5 +169,6 @@ include'./head.php'
 
 
 	<?php
+	
 	include'./foot.php'
 	?>
