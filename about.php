@@ -43,8 +43,7 @@ session_start
 	</br>
 <div class="container" align="center">
 	<h3>Created by Thomas Pontikes</h3>
-					<h3>and<h3>
-	<a target="_blank" href='http://vkaloidis.com'><button type="button" class="btn btn-warning">Vas Kaloidis</button></a>
+					
 	
 		</form>
 		
