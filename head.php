@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen"
      href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
     <!-- Bootstrap -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 

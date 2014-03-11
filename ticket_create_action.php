@@ -10,7 +10,7 @@ $_GET['trip_origin'] ;
 $_GET['trip_destination'] ;
 $_GET['ticket_price'];
 $_GET['conformation'];	
-
+$_GET['ticket_time_ofday'];
 include './ticket.php';
 		
 

@@ -41,7 +41,7 @@ include'./head.php'
 
 </br></br>
 
-		    <input type="text" name="ticket_price" class="form Controls input-small" placeholder="Price $">
+		    <input type="text" name="ticket_price" class="form-controls input-small" placeholder="Price $">
 
 
 </br></br>	
@@ -76,24 +76,12 @@ include'./head.php'
 
 </br>
 
-<head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link type="text/css" href="css/bootstrap.min.css" />
-        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap-2.2.2.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
-    </head>
-    <body>
-        <div class="input-append bootstrap-timepicker">
-            <input id="timepicker1" type="text" name="ticket_time" class="input-small" placeholder="Time">
-            <span><i class="icon-time"></i></span>
-        </div>
- 
-        <script type="text/javascript">
-            $('#timepicker1').timepicker();
-        </script>
-    </body>
+
+  <input type="text" class="input-small" placeholder="H:MM" name="ticket_time"> 
+<select class="form-inline input-sm" name="ticket_time_ofday" style="width: 50px">
+	 <option>AM</option>
+	 <option>PM</option>
+     
 </br></br>
 
 		Initial Departure Location<select class="form-control input-sm" name="ticket_origin" width="200" style="width: 200px">
@@ -157,13 +145,14 @@ include'./head.php'
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs »</a>
         </p>
       </div> -->
-
-
+<br>
+<br>
+ <p>(For Educational Purposes Only) </P>
 
     </div> <!-- /container -->
 
 
-
+   
 
 
 
