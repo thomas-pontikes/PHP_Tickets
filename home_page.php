@@ -30,7 +30,7 @@ include'./head.php'
 	<br/>
 	<br/>
 	<br/>
-	<h1>Ticket Generator</h1><small>Please input information to generate a ticket<br/> Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </b></a> online schedule to determine the number of transfers (if any).<br></small>
+	<h1>Ticket Generator</h1>Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </b></a> online schedule to determine the number of transfers (if any).<br></small>
 	<br/>
 	
 	
@@ -74,16 +74,20 @@ include'./head.php'
 	      });
 	    </script> 
 
-</br>
+<br>
 
 
   <input type="text" class="input-small" placeholder="H:MM" name="ticket_time"> 
 <select class="form-inline input-sm" name="ticket_time_ofday" style="width: 50px">
 	 <option>AM</option>
 	 <option>PM</option>
-     
-</br></br>
+     </select>
+<br>
+<br>
 
+
+		
+		
 		Initial Departure Location<select class="form-control input-sm" name="ticket_origin" width="200" style="width: 200px">
 		  <option>STORRS UNIV OF CT CT</option>
 		  <option>HARTFORD CT</option>
@@ -92,8 +96,8 @@ include'./head.php'
 		</select> 
 
 
-
-<br><br/>
+<br>
+<br>
 
 		Final Destination<select class="form-control input-sm" name="ticket_destination" width="200" style="width: 200px">>
 		  <option>STORRS UNIV OF CT CT</option>
@@ -102,9 +106,8 @@ include'./head.php'
 		  <option>PROVIDENCE BZ RI</option>
 		</select>
 
-
-
-<br><br/>
+<br>
+<br>
 
 <p>When scheduling a bus that requires a transfer multiple tickets must be generated <br>
 	The "Origin" and "Destination" change depending on where the bus transfer is located</p>
@@ -121,8 +124,8 @@ include'./head.php'
 
 
 
-<br><br/>
-
+<br>
+<br>
 	Destination<select class="form-control input-sm" name="trip_destination" width="200" style="width: 200px">
 	  <option>STORRS UNIV OF CT CT</option>
 	  <option>HARTFORD CT</option>
@@ -130,7 +133,7 @@ include'./head.php'
 	  <option>PROVIDENCE BZ RI</option>
 	</select>
 
-<br><br/>
+<br><br>
 
 		<input type="submit"class="btn btn-primary" value="Submit" />
 
@@ -147,7 +150,8 @@ include'./head.php'
       </div> -->
 <br>
 <br>
- <p>(For Educational Purposes Only) </P>
+ <p>(For Educational Purposes Only)<br>
+Tickets are not valid and are not intended for use.</p>
 
     </div> <!-- /container -->
 
