@@ -1,3 +1,8 @@
+<html>
+
+<h1>TEST</h1>
+
+
 
 <?php
   
@@ -11,8 +16,9 @@ $_GET['trip_destination'] ;
 $_GET['ticket_price'];
 $_GET['conformation'];	
 $_GET['ticket_time_of_day'];
-include './ticket.php';
-		
+
+include 'ticket.php';		
+
 
 
 ?>

@@ -2,6 +2,7 @@
 include'./head.php'
 ?>
 
+
    <!-- Fixed navbar -->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -133,31 +134,46 @@ include'./head.php'
 	  <option>PROVIDENCE BZ RI</option>
 	</select>
 
-<br><br>
-
-		<input type="submit"class="btn btn-primary" value="Submit" />
-
-		</form>
-
-      <!-- Main component for a primary marketing message or call to action 
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs »</a>
-        </p>
-      </div> -->
 <br>
-<br>
- <p>(For Educational Purposes Only)<br>
-Tickets are not valid and are not intended for use.</p>
-
-    </div> <!-- /container -->
 
 
-   
 
+<script type="text/javascript">
+function checkSubmit(ele, id) {
+	x = document.getElementById(id);
+	if (ele.checked == true) x.disabled = false;
+	else x.disabled = true;
+}
+</script>
+
+<h4>(DISCLAIMER)</h4>
+Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>    <input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y" /> <br><br>
+
+<input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled" />
+
+
+
+
+
+
+
+
+
+    
+</div> <!-- /container -->
+
+
+	</form>
+
+  <!-- Main component for a primary marketing message or call to action 
+  <div class="jumbotron">
+    <h1>Navbar example</h1>
+    <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+    <p>To see the difference between static and fixed top navbars, just scroll.</p>
+    <p>
+      <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs »</a>
+    </p>
+  </div> -->
 
 
 
