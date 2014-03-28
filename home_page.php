@@ -136,6 +136,9 @@ include'./head.php'
 
 <br>
 
+	Ticket Number <input type="text" name="number_ticket_1" class="form-controls"placeholder="1"style="width: 35px"> of <input type="text" name="number_ticket_2" class="form-controls"placeholder="1"style="width: 35px">
+<br>
+
 
 
 <script type="text/javascript">

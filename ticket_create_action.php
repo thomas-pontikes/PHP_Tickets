@@ -11,6 +11,9 @@ $_GET['trip_destination'] ;
 $_GET['ticket_price'];
 $_GET['conformation'];	
 $_GET['ticket_time_of_day'];
+$_GET['number_ticket_1'];
+$_GET['number_ticket_2'];
+
 
 include 'ticket.php';		
 
