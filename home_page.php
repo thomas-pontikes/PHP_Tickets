@@ -31,7 +31,7 @@ include'./head.php'
 	<br/>
 	<br/>
 	<br/>
-	<h1>Ticket Generator</h1>Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </b></a> online schedule to determine the number of transfers (if any).<br></small>
+	<h1>Ticket Generator</h1>Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </b></a> online schedule to determine the price, date, and number of transfers (if any).<br></small>
 	<br/>
 	
 	
