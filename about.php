@@ -24,13 +24,17 @@ include './head.php';
     </div><!--/.nav-collapse -->
   </div>
 </div>
-
+<br>
+<br>
+<br>
+<br>
 <div class="container" align="center">
+<h1>Created by Thomas Pontikes</h1>
+<h3>Hosted on Raspberry Pi</h3>
 <br/>
 <br/>
 <br/>
-<br/>
-	<iframe class="vine-embed" src="https://vine.co/v/hP52M9BtFUv/embed/simple?audio=1" width="480" height="480" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+	<img src="Images/rasp.jpg" alt="Hosted on Raspberry Pi">
 	</br>
 	</br>
 	</br>
@@ -39,10 +43,8 @@ include './head.php';
 	</br>
 	</br>
 	</br>
-<div class="container" align="center">
-	<h3>Created by Thomas Pontikes</h3>
-					
-	
+
+				
 		</form>
 		
 		<?php
