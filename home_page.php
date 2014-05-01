@@ -94,6 +94,8 @@ include'./head.php'
 		  <option>HARTFORD CT</option>
 		  <option>WATERBURY CT</option>
 		  <option>PROVIDENCE BZ RI</option>
+		  <option>PROVIDENCE KENNEDY PLZ BZ RI</option>
+		  
 		</select> 
 
 
@@ -105,6 +107,8 @@ include'./head.php'
 		  <option>HARTFORD CT</option>
 		  <option>WATERBURY CT</option>
 		  <option>PROVIDENCE BZ RI</option>
+		  <option>PROVIDENCE KENNEDY PLZ BZ RI</option>
+		  
 		</select>
 
 <br>
@@ -121,6 +125,8 @@ include'./head.php'
 		  <option>HARTFORD CT</option>
 		  <option>WATERBURY CT</option>
 		  <option>PROVIDENCE BZ RI</option>
+		  <option>PROVIDENCE KENNEDY PLZ BZ RI</option>
+		  
 		</select>
 
 
@@ -132,6 +138,8 @@ include'./head.php'
 	  <option>HARTFORD CT</option>
 	  <option>WATERBURY CT</option>
 	  <option>PROVIDENCE BZ RI</option>
+	  <option>PROVIDENCE KENNEDY PLZ BZ RI</option>
+	  
 	</select>
 
 <br>
