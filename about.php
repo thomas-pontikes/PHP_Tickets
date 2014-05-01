@@ -4,22 +4,18 @@ include './head.php';
 
 
 <!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+   <!-- Fixed navbar -->
+<div class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+		<span class="icon-bar"></span>
       </button>
-      
+
     </div>
     <a class="navbar-brand" href="./index.php">phpTicket</a>
-	<div class="navbar-collapse collapse">
        <ul class="nav navbar-nav">
         <li><a href="home_page.php">Home</a></li>
-        <li class="active"><a href="./about.php">About</a></li>
+        <li class='active'><a href="./about.php">About</a></li>
 
     </div><!--/.nav-collapse -->
   </div>

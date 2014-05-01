@@ -4,19 +4,14 @@ include'./head.php'
 
 
    <!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+		<span class="icon-bar"></span>
       </button>
 
     </div>
     <a class="navbar-brand" href="./index.php">phpTicket</a>
-	<div class="navbar-collapse collapse">
        <ul class="nav navbar-nav">
         <li class='active'><a href="home_page.php">Home</a></li>
         <li><a href="./about.php">About</a></li>
@@ -27,10 +22,7 @@ include'./head.php'
 
 
 	<div class="container" align="left">
-	<br/>
-	<br/>
-	<br/>
-	<br/>
+
 	<h1>Ticket Generator</h1>Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </b></a> online schedule to determine the <b>price, date, and number of transfers</b> (if any).<br></small>
 	<br/>
 	
@@ -147,8 +139,6 @@ include'./head.php'
 	Ticket Number <input type="text" name="number_ticket_1" class="form-controls"placeholder="1"style="width: 35px"> of <input type="text" name="number_ticket_2" class="form-controls"placeholder="1"style="width: 35px">
 <br>
 
-
-
 <script type="text/javascript">
 function checkSubmit(ele, id) {
 	x = document.getElementById(id);
@@ -158,7 +148,7 @@ function checkSubmit(ele, id) {
 </script>
 
 <h4>(DISCLAIMER)</h4>
-Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>    <input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y" /> <br><br>
+Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>     <input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y" /> <br><br>
 
 <input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled" />
 
