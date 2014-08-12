@@ -17,7 +17,7 @@ mysql_select_db($db);
 if (isset($_POST['username'])) {
 	$username = $_POST['username'];
 	$encryptme = $_POST['password'];
-	$password = md5($encryptme);
+	$password = hash('sha256', $encryptme);
 $sql = "SELECT * FROM users WHERE username='".$username."' AND password='".$password."' LIMIT 1";
 $res = mysql_query($sql);
 if (mysql_num_rows($res) == 1) {
