@@ -5,7 +5,7 @@ include('register.php');
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$repassword = $_POST['repassword'];
-	$email = $_POST['email']
+	$email = $_POST['email'];
 	
 if(isset($_POST['submit'])){
 	
