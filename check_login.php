@@ -9,7 +9,7 @@
 
 $host = "localhost";
 $user = "root";
-$pass = "root";
+$pass = "tap13002";
 $db = "secure_login";
 
 mysql_connect($host, $user, $pass);
