@@ -28,7 +28,7 @@ if($encpassword==$encrepassword){
 	}
 	
 	$con = mysqli_connect('localhost','root','tap13002','secure_login');		
-	mysqli_query($con,"INSERT INTO users (username, password) VALUES ('$username','$encpassword','$email')");
+	mysqli_query($con,"INSERT INTO users (username, password, email) VALUES ('$username','$encpassword','$email')");
 	echo '<html><h1>Success<br><br>You are now registered, please login <a href="index.php"> here </a></h1></html>';
 }
 
