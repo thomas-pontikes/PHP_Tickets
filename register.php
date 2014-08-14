@@ -40,6 +40,10 @@ User Name:
 <br>
 <input type="text" name="username" placeholder="username" ></input>
 <br><br>
+Email:
+<br>
+<input type="email" name="email" placeholder="email" ></input>
+<br><br>
 Password:
 <br>
 <input type="password" name="password" placeholder="password" ></input>
@@ -47,7 +51,7 @@ Password:
 Re-type Password:
 <br>
 <input type="password" name="repassword"placeholder="repeat password" ></input>
-<br>
+<br><br>
 <input type="submit" name="submit" value="Register"></input>
 </form>
 </div>
