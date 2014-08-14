@@ -1,7 +1,7 @@
 <?php
 
 include('register.php');
-
+include('ipget.php')
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$repassword = $_POST['repassword'];
@@ -28,7 +28,7 @@ if($encpassword==$encrepassword){
 	}
 	
 	$con = mysqli_connect('localhost','root','tap13002','secure_login');		
-	mysqli_query($con,"INSERT INTO users (username, password, email) VALUES ('$username','$encpassword','$email')");
+	mysqli_query($con,"INSERT INTO users (username, password, email, ip_address) VALUES ('$username','$encpassword','$email','$ip')");
 	echo '<html><h1>Success<br><br>You are now registered, please login <a href="index.php"> here </a></h1></html>';
 }
 
