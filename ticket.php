@@ -27,6 +27,7 @@ $randtimem = rand(10,59);
 $ampmarray = array("a","p");
 $randtimenum = rand(0,1);
 $randampm = $ampmarray[$randtimenum];
+$purch_date = date('d',strtotime("-1 days"));
 ?>
 
 <!DOCTYPE html >
@@ -68,7 +69,7 @@ $randampm = $ampmarray[$randtimenum];
 
 #t1_1{-webkit-transform:matrix(0,-1.19,1,0,285, 275) scale(0.25);-ms-transform:matrix(0,-1.19,1,0,285, 275) scale(0.25);-moz-transform:matrix(0,-1.19,1,0,285, 275) scale(0.25);-o-transform:matrix(0,-1.19,1,0,285, 275) scale(0.25);}
 #t2_1{left:701px;top:105px;}
-#t3_1{left:757px;top:113px;}
+#t3_1{left:757px;top:117px;}
 #t4_1{left:312px;top:57px;}
 #t5_1{left:312px;top:367px;}
 #t6_1{left:444px;top:367px;}
@@ -278,7 +279,7 @@ $randampm = $ampmarray[$randtimenum];
 <div id="tl_1" class="t v1 s2_1">NBTA </div>
 <div id="tm_1" class="t v1 s2_1">0117</div>
 <div id="tn_1" class="t v1 s2_1">FROM:</div>
-<div id="to_1" class="t v1 s2_1">TO:<?echo"$destination";?></div>
+<div id="to_1" class="t v1 s2_1">TO:  <?echo"$destination";?></div>
 <div id="tp_1" class="t v1 s2_1"><?echo"$origin";?> </div>
 <div id="tq_1" class="t v2 s2_1">ADULT</div>
 <div id="tr_1" class="t v2 s2_1"><?echo"$ticketname";?></div>
@@ -287,7 +288,7 @@ $randampm = $ampmarray[$randtimenum];
 <div id="tu_1" class="t v2 s2_1">TICKET FOR SCHEDULE <?echo"$route";?> /<?echo"{$date1}{$date2}{$date3}";?></div>
 <div id="tv_1" class="t v1 s2_1">CONF#: <?echo"$conf";?></div>
 <div id="tw_1" class="t v1 s2_1">CANCELLATION FEE 20% WHEN VALID FOR REFUND</div>
-<div id="tx_1" class="t v1 s2_1"><?echo"{$date1}{$date2}{$date3}";?> <?echo"$randtimeh"?>:<?echo"$randtimem"?><?echo"$randampm"?> 1042</div>
+<div id="tx_1" class="t v1 s2_1"><?echo"{$purch_date}{$date2}{$date3}";?> <?echo"$randtimeh"?>:<?echo"$randtimem"?><?echo"$randampm"?> 1042</div>
 <div id="ty_1" class="t v2 s2_1">SCHED <?echo"$route";?></div>
 <div id="tz_1" class="t v1 s2_1">PPWS241 </div>
 <div id="t10_1" class="t v1 s2_1">BOARDING #: </div>
