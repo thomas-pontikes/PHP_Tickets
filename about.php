@@ -1,7 +1,28 @@
-<?php
-include './head.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<title>PhpTickets</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" href="css/bootstrap.min.css" />
+        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
+   	 	<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>PhpTickets</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		        <link type="text/css" href="css/bootstrap.min.css" />
+		        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
+				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+				        <script type="text/javascript" src="js/bootstrap-2.2.2.min.js"></script>
+				        <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+		       
+
+   
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Fixed navbar -->
    <!-- Fixed navbar -->
@@ -26,26 +47,12 @@ include './head.php';
 <br>
 <div class="container" align="center">
 <h1>Created by Thomas Pontikes</h1>
-<h3>Hosted on Raspberry Pi</h3>
-<br/>
-<br/>
-<br/>
-	<img src="Images/rasp.jpg" alt="Hosted on Raspberry Pi">
-	</br>
-	</br>
-	</br>
-	<a href='http://www.pornhub.com'><button type="button" class="btn btn-danger">Dont Press me!!</button></a>
-	</br>
-	</br>
-	</br>
-	</br>
+<h3>Click <a href="http://www.tpontikes.com">here</a> to learn more about me</h3>
+
 
 				
 		</form>
-		
-		<?php
-		include './foot.php';
-		?>
+	
 
       <!-- Main component for a primary marketing message or call to action 
       <div class="jumbotron">

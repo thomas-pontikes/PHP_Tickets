@@ -1,7 +1,28 @@
-<?php
-include'./head.php'
-?>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<title>PhpTickets</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" href="css/bootstrap.min.css" />
+        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
+   	 	<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>PhpTickets</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		        <link type="text/css" href="css/bootstrap.min.css" />
+		        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
+				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+				        <script type="text/javascript" src="js/bootstrap-2.2.2.min.js"></script>
+				        <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+		       
+
+   
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
    <!-- Fixed navbar -->
 <div class="navbar navbar-default" role="navigation">
@@ -29,19 +50,23 @@ include'./head.php'
 	
 <form action="ticket.php" method="GET">
 			
-
-		<input type="text" name="ticket_holder_name" class="form-controls" placeholder="Name: Last, First">
+Name:
+<br>
+		<input type="text" name="ticket_holder_name" class="form-controls" placeholder="Last, First">
 
 <br>
-
-		<input type="text" name="ticket_price" class="form-controls input-small" placeholder="Price $">
-		
 <br>
+Price:
+<br>
+<input type="text" name="ticket_price" class="form-controls" style="width: 65px" placeholder="16.00">
 
-<div class="form-group">
+<br>
+<br>
 Date:
-
-<select class="form-control input-sm" name="date1" align="center"style="width: 70px">
+<table style="width:20px">
+<tr>
+	<td>
+	<select class="form-control input-sm" name="date1" align="center"style="width: 70px">
 	<option value="01">01</option>
 	<option value="02">02</option>
 	<option value="03">03</option>
@@ -74,7 +99,8 @@ Date:
 	<option value="30">30</option>
 	<option value="31">31</option>
 </select>
-<br>
+</td>
+<td>
  <select class="form-control input-sm" name="date2" align="center"style="width: 70px">
 	<option value="Jan">Jan</option>
 	<option value="Feb">Feb</option>
@@ -89,21 +115,27 @@ Date:
 	<option value="Nov">Nov</option>
 	<option value="Dec">Dec</option>
 </select>
-<br>
+</td>
+<td>
 <select class="form-control input-sm" name="date3" align="center"style="width: 70px">
 	<option value="14">2014</option>
 	<option value="15">2015</option>
 </select>
+</td>
+</tr>
+</table>
+
 <br>
-Time
+Time:
 <br>
-<input type="text" class="input-small" placeholder="HH:MM" name="ticket_time"> 
+<input type="time" class="input-small" placeholder="HH:MM" name="ticket_time"> 
 <select class="form-inline input-sm" name="ticket_time_ofday" style="width: 50px">
 	 <option value="a">AM</option>
 	 <option value="p">PM</option>
      </select>
-    </div>
 <br>
+<br>
+
 
 Route Number<br>
 <input type="text" name="routenbr" class="form-controls" placeholder="Route Number">
@@ -415,37 +447,11 @@ function checkSubmit(ele, id) {
 </script>
 
 <h4>(DISCLAIMER)</h4>
-Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>     <input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y" /> <br>
-
+Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>     <input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y" />
+<br>
 <input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled" />
+<br>
+<br>
 
+</form>
 
-
-
-
-
-
-
-
-    
-</div> <!-- /container -->
-
-
-	</form>
-
-  <!-- Main component for a primary marketing message or call to action 
-  <div class="jumbotron">
-    <h1>Navbar example</h1>
-    <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-    <p>To see the difference between static and fixed top navbars, just scroll.</p>
-    <p>
-      <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs »</a>
-    </p>
-  </div> -->
-
-
-
-	<?php
-	
-	include'./foot.php'
-	?>
