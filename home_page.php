@@ -58,15 +58,15 @@ Name:
 <br>
 Price:
 <br>
-<input type="text" name="ticket_price" class="form-controls" style="width: 65px" placeholder="16.00">
+<input type="text" name="ticket_price" class="form-controls" style="width: 75px" placeholder="16.00">
 
 <br>
 <br>
 Date:
-<table style="width:20px">
+<table style="width:30px">
 <tr>
 	<td>
-	<select class="form-control input-sm" name="date1" align="center"style="width: 70px">
+	<select class="form-control input-sm" name="date1" align="center"style="width: 80px">
 	<option value="01">01</option>
 	<option value="02">02</option>
 	<option value="03">03</option>
@@ -101,7 +101,7 @@ Date:
 </select>
 </td>
 <td>
- <select class="form-control input-sm" name="date2" align="center"style="width: 70px">
+ <select class="form-control input-sm" name="date2" align="center"style="width: 80px">
 	<option value="Jan">Jan</option>
 	<option value="Feb">Feb</option>
 	<option value="Mar">Mar</option>
@@ -117,7 +117,7 @@ Date:
 </select>
 </td>
 <td>
-<select class="form-control input-sm" name="date3" align="center"style="width: 70px">
+<select class="form-control input-sm" name="date3" align="center"style="width: 80px">
 	<option value="14">2014</option>
 	<option value="15">2015</option>
 </select>
@@ -128,8 +128,8 @@ Date:
 <br>
 Time:
 <br>
-<input type="time" class="input-small" placeholder="HH:MM" name="ticket_time"> 
-<select class="form-inline input-sm" name="ticket_time_ofday" style="width: 50px">
+<input type="text" class="input-small" placeholder="HH:MM" name="ticket_time"> 
+<select class="form-inline input-sm" name="ticket_time_ofday" style="width: 65px">
 	 <option value="a">AM</option>
 	 <option value="p">PM</option>
      </select>
