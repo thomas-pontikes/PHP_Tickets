@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Sign in · Twitter Bootstrap</title>
+    <title>PHP_Tickets Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,6 +10,17 @@
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
+	.pos_fixed {
+		padding-top:15px;
+		font-size:24px;
+	    position: fixed;
+	    text-align:center;
+		top:1px;
+		left:10px;
+		right:10px;
+	    color: red;
+	}
+	
       body {
         padding-top: 100px;
         padding-bottom: 40px;
@@ -36,7 +47,8 @@
 	
       }
       .form-signin input[type="text"],
-      .form-signin input[type="password"] {
+      .form-signin input[type="password"],
+	  .form-signin input[type="email"] {
         font-size: 16px;
         height: auto;
         margin-bottom: 15px;
@@ -72,7 +84,7 @@
 
     <div class="container">
 
-      <form method="post" class="form-signin">
+      <form method="post" action="register_account.php" class="form-signin">
 		  <h1>Welcome to PHP_Tickets<h1>
 			  <div class="p">
 			  <p>Generating your Peter Pan Bus tickets since 2013!</p>
@@ -81,10 +93,10 @@
         <p>Please Enter the Following</p>
 		<div>
         <input type="text" name="username" class="input-block-level" placeholder="Username">
-        <input type="text" name="email" class="input-block-level" placeholder="Email">
+        <input type="email" name="email" class="input-block-level" placeholder="Email">
         <input type="password" name="password" class="input-block-level" placeholder="Password">
         <input type="password" name="repassword" class="input-block-level" placeholder="Repeat Password">
-        <button class="btn btn-large btn-primary" type="submit">Register</button>
+        <button class="btn btn-large btn-primary" name="submit" type="submit">Register</button>
       </form>
 	 
 
