@@ -1,7 +1,6 @@
 <?php
 
-include('register.php');
-
+include('register.php')
 
 if ( isset($_SERVER['HTTP_CLIENT_IP']) && ! empty($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['HTTP_CLIENT_IP'];

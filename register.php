@@ -1,59 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-</head>
-<title>PHP_Tickets Register Page</title>
-<meta charset="UTF-8">
-<style type="text/css">
-html {
-	font-family: Verdana, Geneva, sans-serif;
-}
-h1 {
-	font-size: 24px;
-	text-align: center;
+    <meta charset="utf-8">
+    <title>Sign in · Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-}
-h2 {
-	font-size: 12px;
-	text-align: center;
-}
-#wrapper {
-	position: absolute;
-	width: 100%;
-	top: 30%;
-	margin-top: -50px;/* half of #content height*/
-}
-#form {
-	position: absolute;
-	text-align:center;
-	width: 100%;
-	top: 70%;	
-}
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 100px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
 
-</style>
+      .form-signin {
+        max-width: 400px;
+        padding: 29px 99px 59px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 20px;
+		text-align: center;
+	
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+	  .register{
+		  text-align:center;
+		  font-size: 15px;
+	  }
+	  .p{
+		  font-size:14px;
+		  text-align:center;
+	  }
+	  .q{
+		  font-size:26px;
+		  text-align:center;
+		  padding-top:40px;
+		  padding-bottom:20px;
+	  }
+
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+  
+  </head>
+
 <body>
-<div id="wrapper">
-<h1>Register:</h1>
-<br><br>
-<form id="form" action="register_account.php" method="post">
-User Name:
-<br>
-<input type="text" name="username" placeholder="username" ></input>
-<br><br>
-Email:
-<br>
-<input type="email" name="email" placeholder="email" ></input>
-<br><br>
-Password:
-<br>
-<input type="password" name="password" placeholder="password" ></input>
-<br><br>
-Re-type Password:
-<br>
-<input type="password" name="repassword"placeholder="repeat password" ></input>
-<br><br>
-<input type="submit" name="submit" value="Register"></input>
-</form>
-</div>
-</body>
+
+    <div class="container">
+
+      <form method="post" class="form-signin">
+		  <h1>Welcome to PHP_Tickets<h1>
+			  <div class="p">
+			  <p>Generating your Peter Pan Bus tickets since 2013!</p>
+		  </div>
+	  <div class="q">
+        <p>Please Enter the Following</p>
+		<div>
+        <input type="text" name="username" class="input-block-level" placeholder="Username">
+        <input type="text" name="email" class="input-block-level" placeholder="Email">
+        <input type="password" name="password" class="input-block-level" placeholder="Password">
+        <input type="password" name="repassword" class="input-block-level" placeholder="Repeat Password">
+        <button class="btn btn-large btn-primary" type="submit">Register</button>
+      </form>
+	 
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   </body>
 </html>
