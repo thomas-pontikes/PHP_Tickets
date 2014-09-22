@@ -3,7 +3,6 @@
 include('register.php');
 
 $con = mysqli_connect('localhost','root','tap13002','secure_login');		
-$sql = mysql_query("SELECT * FROM users (username, password, email, ip_address) WHERE username=$username");
 
 if ( isset($_SERVER['HTTP_CLIENT_IP']) && ! empty($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -30,7 +29,7 @@ $encrepassword = hash('sha256', $_POST['repassword']);
 echo '<html><div class="pos_fixed"<h1>Attention:<br>Please enter text in all fields</h1></div></html>';
 exit();
 }
-
+$sql = mysql_query("SELECT * FROM users (username, password, email, ip_address) WHERE username=$username");
 if(mysql_num_rows($sql) >= 1){
 		echo '<html><div class="pos_fixed" <h1>Attention:<br><br>That user already exists!</h1></div></html>';
 			exit();
