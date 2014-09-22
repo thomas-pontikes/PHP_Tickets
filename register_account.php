@@ -33,11 +33,10 @@ if($encpassword==$encrepassword){
 	
 	$sql = mysql_query("SELECT * FROM users WHERE username=$username");
 	
-	if(mysql_num_rows($sql) > 0){
+	if(mysql_num_rows($sql) > 1){
 		echo '<html><div class="pos_fixed" <h1>Attention:<br><br>That user already exists!</h1></div></html>';
 			exit();
 	}
-	
 	$con = mysqli_connect('localhost','root','tap13002','secure_login');		
 	mysqli_query($con,"INSERT INTO users (username, password, email, ip_address) VALUES ('$username','$encpassword','$email','$ip')");
 	echo '<html><div class="pos_fixed" <h1>Success <br>You are now registered, please login <a href="index.php"> here </a></h1></div></html>';
