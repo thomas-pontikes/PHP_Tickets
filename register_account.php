@@ -21,7 +21,7 @@ $ip = ($ip === false) ? '0.0.0.0' : $ip;
 	$email = $_POST['email'];
 	
 if(isset($_POST['submit'])){
-	
+$sql = mysql_query( "SELECT * FROM users  WHERE username='$usernsme'");
 if($username&&$password&&$repassword&&$email){
 $encpassword = hash('sha256', $_POST['password']);
 $encrepassword = hash('sha256', $_POST['repassword']);
@@ -29,7 +29,7 @@ $encrepassword = hash('sha256', $_POST['repassword']);
 echo '<html><div class="pos_fixed"<h1>Attention:<br>Please enter text in all fields</h1></div></html>';
 exit();
 }
-$sql = mysql_query( "SELECT * FROM users  WHERE username='$usernsme'");
+
 if(mysql_num_rows($sql) >= 1){
 		echo '<html><div class="pos_fixed" <h1>Attention:<br><br>That user already exists!</h1></div></html>';
 			exit();
