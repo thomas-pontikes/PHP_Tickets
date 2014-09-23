@@ -33,7 +33,7 @@ $sql = mysql_query( "SELECT * FROM users  WHERE username='$usernsme'");
 if(mysql_num_rows($sql) >= 1){
 		echo '<html><div class="pos_fixed" <h1>Attention:<br><br>That user already exists!</h1></div></html>';
 			exit();
-}	
+}else{
 
 if($encpassword==$encrepassword){	
 					
@@ -43,7 +43,7 @@ mysqli_query($con,"INSERT INTO users (username, password, email, ip_address) VAL
 }else{
 	echo '<html><div class="pos_fixed" <h1>Attention:<br>Passwords do not match!</h1></div></html>';
 	exit();
-
+}
 }
 }
 
