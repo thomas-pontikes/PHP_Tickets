@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>PHP_Tickets Register</title>
+    <title>PHP_Tickets</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="Thomas Pontikes" content="">
@@ -10,6 +10,7 @@
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
+	
 	.pos_fixed {
 		padding-top:15px;
 		font-size:24px;
@@ -20,8 +21,7 @@
 		right:10px;
 	    color: red;
 	}
-	
-      body {
+	  body {
         padding-top: 100px;
         padding-bottom: 40px;
         background-color: #f5f5f5;
@@ -47,8 +47,7 @@
 	
       }
       .form-signin input[type="text"],
-      .form-signin input[type="password"],
-	  .form-signin input[type="email"] {
+      .form-signin input[type="password"] {
         font-size: 16px;
         height: auto;
         margin-bottom: 15px;
@@ -84,19 +83,22 @@
 
     <div class="container">
 
-      <form method="post" action="register_account.php" class="form-signin">
+      <form method="post" action="index.php" class="form-signin">
 		  <h1>Welcome to PHP_Tickets<h1>
 			  <div class="p">
 			  <p>Generating your Peter Pan Bus tickets since 2013!</p>
 		  </div>
 	  <div class="q">
-        <p>Please Enter the Following</p>
+        <p>Please Sign In</p>
 		<div>
         <input type="text" name="username" class="input-block-level" placeholder="Username">
-        <input type="email" name="email" class="input-block-level" placeholder="Email">
         <input type="password" name="password" class="input-block-level" placeholder="Password">
-        <input type="password" name="repassword" class="input-block-level" placeholder="Repeat Password">
-        <button class="btn btn-large btn-primary" name="submit" type="submit">Register</button>
+        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+		<br>
+		<br>
+		<div class="register">
+       <p>To register click <a href="register_account.php">here</a></p>
+	</div>
       </form>
 	 
 
@@ -105,5 +107,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-   </body>
-</html>
+   
+  
+
+</body>

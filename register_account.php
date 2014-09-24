@@ -1,50 +1,139 @@
 <?php
 
 include('register.php');
+include('ipget.php');
 
-$con = mysqli_connect('localhost','root','tap13002','secure_login');		
+if (isset($_POST['submit'])) {
 
-if ( isset($_SERVER['HTTP_CLIENT_IP']) && ! empty($_SERVER['HTTP_CLIENT_IP'])) {
-    $ip = $_SERVER['HTTP_CLIENT_IP'];
-} elseif ( isset($_SERVER['HTTP_X_FORWARDED_FOR']) && ! empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-} else {
-    $ip = (isset($_SERVER['REMOTE_ADDR'])) ? $_SERVER['REMOTE_ADDR'] : '0.0.0.0';
+$connect = mysql_connect("localhost", "root", "tap13002");
+
+if(!$connect){
+
+die(mysql_error());
+
 }
 
-$ip = filter_var($ip, FILTER_VALIDATE_IP);
-$ip = ($ip === false) ? '0.0.0.0' : $ip;
 
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$repassword = $_POST['repassword'];
-	$email = $_POST['email'];
-	
-if(isset($_POST['submit'])){
-$sql = mysql_query( "SELECT * FROM users  WHERE username='$usernsme'");
-if($username&&$password&&$repassword&&$email){
-$encpassword = hash('sha256', $_POST['password']);
-$encrepassword = hash('sha256', $_POST['repassword']);
+//Selecting database
+
+$select_db = mysql_select_db("secure_login", $connect);
+
+if(!$select_db){
+
+die(mysql_error());
+
+}
+
+
+//Collecting info
+
+$username = $_REQUEST['username'];
+
+$password = $_REQUEST['password'];
+
+$repassword = $_REQUEST['repassword'];
+
+$email = $_REQUEST['email'];
+
+$date = $_REQUEST['date'];
+
+
+//Here we will check do we have all inputs filled
+
+
+if(empty($username)){
+
+echo'<html><class="pos_fixed" <p> Please enter your username!</p><div></html>';
+
+}
+
+
+if(empty($password)){
+
+die("Please enter your password!<br>");
+
+}
+
+
+if(empty($repassword)){
+
+die("Please confirm your password!<br>");
+
+}
+
+
+if(empty($email)){
+
+die("Please enter your email!");
+
+}
+
+
+//Let's check if this username is already in use
+
+
+$user_check = mysql_query("SELECT username FROM users WHERE username='$username'");
+
+$do_user_check = mysql_num_rows($user_check);
+
+
+//Now if email is already in use
+
+
+$email_check = mysql_query("SELECT email FROM users WHERE email='$email'");
+
+$do_email_check = mysql_num_rows($email_check);
+
+
+//Now display errors
+
+
+if($do_user_check > 0){
+
+die("Username is already in use!<br>");
+
+}
+
+
+if($do_email_check > 0){
+
+die("Email is already in use!");
+
+}
+
+
+//Now let's check does passwords match
+
+
+if($password != $repassword){
+
+die("Passwords don't match!");
+
 }else{
-echo '<html><div class="pos_fixed"<h1>Attention:<br>Please enter text in all fields</h1></div></html>';
-exit();
+	$encryptme = $_POST['password'];
+
+	$password = hash('sha256', $encryptme);
 }
 
-if(mysql_num_rows($sql) >= 1){
-		echo '<html><div class="pos_fixed" <h1>Attention:<br><br>That user already exists!</h1></div></html>';
-			exit();
-}else{
 
-if($encpassword==$encrepassword){	
-					
-mysqli_query($con,"INSERT INTO users (username, password, email, ip_address) VALUES ('$username','$encpassword','$email','$ip')");
-	echo '<html><div class="pos_fixed" <h1>Success <br>You are now registered, please login <a href="index.php"> here </a></h1></div></html>';
 
-}else{
-	echo '<html><div class="pos_fixed" <h1>Attention:<br>Passwords do not match!</h1></div></html>';
-	exit();
+//If everything is okay let's register this user
+
+
+$insert = mysql_query("INSERT INTO users (username, password, email, ip) VALUES ('$username', '$password', '$email','$ip')");
+
+if(!$insert){
+
+die("There's little problem: ".mysql_error());
+
 }
-}
+
+
+echo $username.", you are now registered. Thank you!<br><a href=login.php>Login</a> | <a href=index.php>Index</a>";
+
+
+
+
 }
 
 ?>
