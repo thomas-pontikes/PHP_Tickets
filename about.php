@@ -1,18 +1,4 @@
-<?
 
-//Start session
-session_start();
- 
-//Check whether the session variable SESS_MEMBER_ID is present or not
-if($_SESSION['userid'] || $_SESSION['username']) {
-    // Logged in
-}else {
-    // Not logged
-	header("location: index.php");	
-	exit();
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
