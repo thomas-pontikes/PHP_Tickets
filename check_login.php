@@ -1,9 +1,8 @@
 <?php
-include 'login_page.php';
-$host = "localhost";
-$user = "root";
-$pass = "tap13002";
-$db = "secure_login";
+include('database.php');
+
+session_start();
+ob_start();
 
 mysql_connect($host, $user, $pass);
 mysql_select_db($db);
@@ -15,13 +14,19 @@ if (isset($_POST['username'])) {
 $sql = "SELECT * FROM users WHERE username='".$username."' AND password='".$password."' LIMIT 1";
 $res = mysql_query($sql);
 if (mysql_num_rows($res) == 1) {
-	echo '<script type="text/javascript">
-           window.location = "home_page.php"
-      </script>';
-	die();
-	} else { 
+	
+	session_regenerate_id();
+	$_SESSION['user_id'] = $userData['id'];
+	$_SESSION['username'] = $userData['username'];
+	session_write_close();
+	ob_end_flush();
+	header("Location: home_page.php");
+
+} else { 
+		include'index.php';
 	echo '<html><div class="pos_fixed" <p> Login Has Failed please <br> Check Your username/password</p><div></html>';
 }
 
 }
+
 ?>

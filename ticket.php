@@ -1,19 +1,18 @@
-<?
-
-$ticketname = strtoupper($_GET['ticket_holder_name']);
-$date1 = $_GET['date1'];
-$date2 = $_GET['date2'];
-$date3 = $_GET['date3'];
-$time = $_GET['ticket_time'];
-$ampm = $_GET['ticket_time_ofday'];
-$route = $_GET['routenbr'];
-$origin = $_GET['ticket_origin'];
-$destination = $_GET['ticket_destination'];
-$coupon_origin = $_GET['trip_origin'] ;
-$coupon_destination = $_GET['trip_destination'] ;
-$price = $_GET['ticket_price'];	
-$coupon_num = $_GET['number_ticket_1'];
-$coupon_num2 = $_GET['number_ticket_2'];
+<?php
+$ticketname = strtoupper($_POST['ticket_holder_name']);
+$date1 = $_POST['date1'];
+$date2 = $_POST['date2'];
+$date3 = $_POST['date3'];
+$time = $_POST['ticket_time'];
+$ampm = $_POST['ticket_time_ofday'];
+$route = $_POST['routenbr'];
+$origin = $_POST['ticket_origin'];
+$destination = $_POST['ticket_destination'];
+$coupon_origin = $_POST['trip_origin'];
+$coupon_destination = $_POST['trip_destination'] ;
+$price = $_POST['ticket_price'];	
+$coupon_num = $_POST['number_ticket_1'];
+$coupon_num2 = $_POST['number_ticket_2'];
 
 $miles = rand(50,70);
 $conf = rand(3925566001,4925566001);
@@ -258,54 +257,54 @@ $purch_date = date('d',strtotime("-1 days"));
 <!-- Begin text definitions (Positioned/styled in CSS) -->
 <div id="t1_1" class="t s1_1">074012901592943700016008</div>
 <div id="t2_1" class="t v1 s2_1">BOARDING #</div>
-<div id="t3_1" class="t v2 s2_1"><?echo"$boarding"?></div>
+<div id="t3_1" class="t v2 s2_1"><?php echo $boarding;?></div>
 <div id="t4_1" class="t v3 s3_1">BONANZA BUS LINES</div>
 <div id="t5_1" class="t v1 s2_1">COUPON </div>
-<div id="t6_1" class="t v1 s2_1">0<?echo"$coupon_num";?> OF 0<?echo"$coupon_num2";?></div>
+<div id="t6_1" class="t v1 s2_1">0<?php echo $coupon_num;?> OF 0<?php echo $coupon_num2;?></div>
 <div id="t7_1" class="t v1 s2_1">0001600</div>
 <div id="t8_1" class="t v1 s2_1">----------------------------------------</div>
 <div id="t9_1" class="t v1 s2_1">----------------------------------------</div>
-<div id="ta_1" class="t v2 s2_1"><?echo"{$date1}{$date2}{$date3}";?> <?echo"{$time}{$ampm}";?></div>
+<div id="ta_1" class="t v2 s2_1"><?php echo"{$date1}{$date2}{$date3}";?> <?php echo"{$time}{$ampm}";?></div>
 <div id="tb_1" class="t v1 s2_1"> DEP: </div>
-<div id="tc_1" class="t v1 s2_1"><?$_GET['ticket_destination'];?></div>
+<div id="tc_1" class="t v1 s2_1"><?php $destination;?></div>
 <div id="td_1" class="t v1 s2_1">1 2 3 4 5 6 7</div>
 <div id="te_1" class="t v1 s2_1">FARE </div>
-<div id="tf_1" class="t v1 s2_1">$<?echo"$price";?></div>
-<div id="tg_1" class="t v1 s2_1"><?echo"$final_card";?> </div>
+<div id="tf_1" class="t v1 s2_1">$<?php echo $price;?></div>
+<div id="tg_1" class="t v1 s2_1"><?php echo $final_card;?> </div>
 <div id="th_1" class="t v1 s2_1">MILES: </div>
-<div id="ti_1" class="t v1 s2_1"><?echo"$miles";?> </div>
-<div id="tj_1" class="t v1 s2_1"><?echo"$miles";?></div>
+<div id="ti_1" class="t v1 s2_1"><?php echo $miles;?> </div>
+<div id="tj_1" class="t v1 s2_1"><?php echo $miles;?></div>
 <div id="tk_1" class="t v1 s2_1">AM/AM</div>
 <div id="tl_1" class="t v1 s2_1">NBTA </div>
 <div id="tm_1" class="t v1 s2_1">0117</div>
 <div id="tn_1" class="t v1 s2_1">FROM:</div>
-<div id="to_1" class="t v1 s2_1">TO:  <?echo"$destination";?></div>
-<div id="tp_1" class="t v1 s2_1"><?echo"$origin";?> </div>
+<div id="to_1" class="t v1 s2_1">TO:  <?php echo $destination;?></div>
+<div id="tp_1" class="t v1 s2_1"><?php echo $origin;?> </div>
 <div id="tq_1" class="t v2 s2_1">ADULT</div>
-<div id="tr_1" class="t v2 s2_1"><?echo"$ticketname";?></div>
+<div id="tr_1" class="t v2 s2_1"><?php echo $ticketname;?></div>
 <div id="ts_1" class="t v1 s2_1">FEE: </div>
 <div id="tt_1" class="t v1 s2_1">$1.50</div>
-<div id="tu_1" class="t v2 s2_1">TICKET FOR SCHEDULE <?echo"$route";?> /<?echo"{$date1}{$date2}{$date3}";?></div>
-<div id="tv_1" class="t v1 s2_1">CONF#: <?echo"$conf";?></div>
+<div id="tu_1" class="t v2 s2_1">TICKET FOR SCHEDULE <?php echo $route;?> /<?php echo"{$date1}{$date2}{$date3}";?></div>
+<div id="tv_1" class="t v1 s2_1">CONF#: <?php echo $conf;?></div>
 <div id="tw_1" class="t v1 s2_1">CANCELLATION FEE 20% WHEN VALID FOR REFUND</div>
-<div id="tx_1" class="t v1 s2_1"><?echo"{$purch_date}{$date2}{$date3}";?> <?echo"$randtimeh"?>:<?echo"$randtimem"?><?echo"$randampm"?> 1042</div>
-<div id="ty_1" class="t v2 s2_1">SCHED <?echo"$route";?></div>
+<div id="tx_1" class="t v1 s2_1"><?php echo"{$purch_date}{$date2}{$date3}";?> <?php echo $randtimeh ;?>:<?php echo $randtimem ?><?php echo $randampm;?> 1042</div>
+<div id="ty_1" class="t v2 s2_1">SCHED <?php echo $route;?></div>
 <div id="tz_1" class="t v1 s2_1">PPWS241 </div>
 <div id="t10_1" class="t v1 s2_1">BOARDING #: </div>
-<div id="t11_1" class="t v2 s2_1"><?echo"$boarding";?></div>
-<div id="t12_1" class="t v2 s2_1"><?echo"$coupon_destination";?></div>
+<div id="t11_1" class="t v2 s2_1"><?php echo $boarding;?></div>
+<div id="t12_1" class="t v2 s2_1"><?php echo $coupon_destination;?></div>
 <div id="t13_1" class="t v1 s2_1">*COUPON DEST*</div>
-<div id="t14_1" class="t v2 s2_1"><?echo"{$date1}{$date2}{$date3}";?></div>
+<div id="t14_1" class="t v2 s2_1"><?php echo"{$date1}{$date2}{$date3}";?></div>
 <div id="t15_1" class="t v2 s2_1">SCHD: BZ </div>
-<div id="t16_1" class="t v2 s2_1"><?echo"$route";?></div>
-<div id="t17_1" class="t v1 s2_1"> <?echo"{$time}{$ampm}";?></div>
+<div id="t16_1" class="t v2 s2_1"><?php echo $route;?></div>
+<div id="t17_1" class="t v1 s2_1"> <?php echo"{$time}{$ampm}";?></div>
 <div id="t18_1" class="t v1 s2_1">REBOARD PASS</div>
-<div id="t19_1" class="t v1 s2_1"><?echo"$coupon_origin";?></div>
+<div id="t19_1" class="t v1 s2_1"><?php echo $coupon_origin;?></div>
 <div id="t1a_1" class="t v1 s2_1">COUPON ORIG</div>
-<div id="t1b_1" class="t v1 s2_1">CONF#: <?echo"$conf";?></div>
-<div id="t1c_1" class="t v1 s2_1"><?echo"{$date1}{$date2}{$date3}";?> <?echo"{$time}{$ampm}"?></div>
-<div id="t1d_1" class="t v1 s2_1">SOLD AT:0<?echo"$rand";?></div>
-<div id="t1e_1" class="t v1 s2_1"><?echo"$destination";?></div>
+<div id="t1b_1" class="t v1 s2_1">CONF#: <?php echo $conf;?></div>
+<div id="t1c_1" class="t v1 s2_1"><?php echo"{$date1}{$date2}{$date3}";?> <?php echo"{$time}{$ampm}"?></div>
+<div id="t1d_1" class="t v1 s2_1">SOLD AT:0<?php echo $rand;?></div>
+<div id="t1e_1" class="t v1 s2_1"><?php echo $destination;?></div>
 <div id="t1f_1" class="t v1 s2_1">TKT DEST</div>
 <div id="t1g_1" class="t v1 s2_1">TARIFF: </div>
 <div id="t1h_1" class="t v1 s2_1">BZ-200</div>
@@ -313,14 +312,14 @@ $purch_date = date('d',strtotime("-1 days"));
 <div id="t1j_1" class="t v1 s2_1">XX</div>
 <div id="t1k_1" class="t v1 s2_1">TAX </div>
 <div id="t1l_1" class="t v1 s2_1">NONE</div>
-<div id="t1m_1" class="t v1 s2_1">TKT DEST:<?echo"$destination";?></div>
+<div id="t1m_1" class="t v1 s2_1">TKT DEST:<?php echo $destination;?></div>
 <div id="t1n_1" class="t v1 s2_1">074 01 29 </div>
 <div id="t1o_1" class="t v1 s2_1">01592943 7</div>
-<div id="t1p_1" class="t v1 s2_1">TKT ORIG:<?echo"$origin";?></div>
+<div id="t1p_1" class="t v1 s2_1">TKT ORIG:<?php echo $origin;?></div>
 <div id="t1q_1" class="t v1 s2_1">03743 </div>
 <div id="t1r_1" class="t v1 s2_1">PETER PAN WE MA</div>
 <div id="t1s_1" class="t v1 s2_1">SUBTOTAL: </div>
-<div id="t1t_1" class="t v1 s2_1">$<?echo"$price";?></div>
+<div id="t1t_1" class="t v1 s2_1">$<?php echo $price;?></div>
 <div id="t1u_1" class="t s4_1">NO REFUNDS OR EXCHANGES EXCEPT AS PROVIDED</div>
 <div id="t1v_1" class="t s4_1">HEREIN. </div>
 <div id="t1w_1" class="t s4_1">AND DUPLICATION OR ALTERATION OF THIS</div>

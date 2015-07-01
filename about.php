@@ -1,3 +1,19 @@
+<?
+
+//Start session
+session_start();
+ 
+//Check whether the session variable SESS_MEMBER_ID is present or not
+if($_SESSION['userid'] || $_SESSION['username']) {
+    // Logged in
+}else {
+    // Not logged
+	header("location: index.php");	
+	exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,12 +29,7 @@
 	    <title>PhpTickets</title>
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		        <link type="text/css" href="css/bootstrap.min.css" />
-		        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
-				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-				        <script type="text/javascript" src="js/bootstrap-2.2.2.min.js"></script>
-				        <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
-		       
+		        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
    
     <!-- Bootstrap -->

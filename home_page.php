@@ -1,54 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<?
+
+//Start session
+session_start();
+ 
+//Check whether the session variable SESS_MEMBER_ID is present or not
+if($_SESSION['userid'] || $_SESSION['username']) {
+    // Logged in
+}else {
+    // Not logged
+	header("location: index.php");	
+	exit();
+}
+
+?>
+
+<html>
 
 <head>
 	<title>PhpTickets</title>
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link type="text/css" href="css/bootstrap.min.css" />
-        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
    	 	<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>PhpTickets</title>
-		
+		<link rel="stylesheet" style="text/css" href="css/bootstrap.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		        <link type="text/css" href="css/bootstrap.min.css" />
-		        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
-				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-				        <script type="text/javascript" src="js/bootstrap-2.2.2.min.js"></script>
-				        <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
-		       
 
-   
-    <!-- Bootstrap -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
 
    <!-- Fixed navbar -->
 <div class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
 		<span class="icon-bar"></span>
-      </button>
+      
 
     </div>
-    <a class="navbar-brand" href="./index.php">phpTicket</a>
+    <a class="navbar-brand" href="home_page.php">phpTicket</a>
        <ul class="nav navbar-nav">
         <li class='active'><a href="home_page.php">Home</a></li>
-        <li><a href="./about.php">About</a></li>
-
-    </div><!--/.nav-collapse -->
-  </div>
+		<li><a href="./about.php">About</a></li>
+			</ul>
 </div>
+</div>
+</div>
+<div class="container" align="left">
+<table>
+<td>
+<h1>Ticket Generator</h1><td>
+<a class="btn btn-danger" href="logout.php"> Logout </a>
+<tr><td>
+Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </b></a> online schedule to determine the <b>price, date, and number of transfers</b> (if any).<br>
 
-
-	<div class="container" align="left">
-
-	<h1>Ticket Generator</h1>Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </b></a> online schedule to determine the <b>price, date, and number of transfers</b> (if any).<br></small>
 	<br/>
-	
-	
-<form action="ticket.php" method="GET">
+</table>
+
+<form action="ticket.php" method="POST">
 			
 Name:
 <br>
@@ -66,7 +74,7 @@ Date:
 <table style="width:30px">
 <tr>
 	<td>
-	<select class="form-control input-sm" name="date1" align="center"style="width: 80px">
+	<select class="form-control input-sm" name="date1" id="date1" align="center"style="width: 80px">
 	<option value="01">01</option>
 	<option value="02">02</option>
 	<option value="03">03</option>
@@ -101,7 +109,7 @@ Date:
 </select>
 </td>
 <td>
- <select class="form-control input-sm" name="date2" align="center"style="width: 80px">
+ <select class="form-control input-sm" name="date2" id="date2" align="center"style="width: 80px">
 	<option value="Jan">Jan</option>
 	<option value="Feb">Feb</option>
 	<option value="Mar">Mar</option>
@@ -117,7 +125,7 @@ Date:
 </select>
 </td>
 <td>
-<select class="form-control input-sm" name="date3" align="center"style="width: 80px">
+<select class="form-control input-sm" name="date3" id="date3" align="center"style="width: 80px">
 	<option value="14">2014</option>
 	<option value="15">2015</option>
 </select>
@@ -128,7 +136,7 @@ Date:
 <br>
 Time:
 <br>
-<input type="text" class="input-small" placeholder="HH:MM" name="ticket_time"> 
+<input type="text" class="input-small" placeholder="HH:MM" name="ticket_time" id="ticket_time"> 
 <select class="form-inline input-sm" name="ticket_time_ofday" style="width: 65px">
 	 <option value="a">AM</option>
 	 <option value="p">PM</option>
@@ -138,11 +146,11 @@ Time:
 
 
 Route Number<br>
-<input type="text" name="routenbr" class="form-controls" placeholder="Route Number">
+<input type="text" name="routenbr" id="routnbr" class="form-controls" placeholder="Route Number">
 			 
 <br>
 <br>
-		Initial Departure Location<select class="form-control input-sm" name="ticket_origin" width="200" style="width: 200px">
+		Initial Departure Location<select class="form-control input-sm" name="ticket_origin" id=" ticket_original" width="200" style="width: 200px">
           <option value="ALBANY, NY">Albany, NY</option>
 		  <option value="AMHERST, MA">Amherst, MA</option>
 		  <option value="BALTIMORE DOWNTOWN, MD">Baltimore Downtown, MD</option>
@@ -454,4 +462,3 @@ Tickets are not valid and are not intended for <b> actual</b> use.<br> By checki
 <br>
 
 </form>
-

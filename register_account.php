@@ -1,18 +1,17 @@
 <?php
-
 include('register.php');
+include('database.php');
 include('ipget.php');
 
 if (isset($_POST['submit'])) {
 
-$connect = mysql_connect("localhost", "root", "tap13002");
+$connect = mysql_connect($host, $user, $pass);
 
 if(!$connect){
 
 die(mysql_error());
 
 }
-
 
 //Selecting database
 
@@ -23,7 +22,6 @@ if(!$select_db){
 die(mysql_error());
 
 }
-
 
 //Collecting info
 
@@ -37,78 +35,66 @@ $email = $_REQUEST['email'];
 
 $date = $_REQUEST['date'];
 
-
 //Here we will check do we have all inputs filled
 
-
 if(empty($username)){
-
-echo'<html><class="pos_fixed" <p> Please enter your username!</p><div></html>';
+echo'<html><class="pos_fixed" <p> Please enter your username! </p> </div></html>';
+die();
 
 }
 
 
 if(empty($password)){
-
-die("Please enter your password!<br>");
+echo 'Please enter your password!<br>';
+die();
 
 }
 
 
 if(empty($repassword)){
-
-die("Please confirm your password!<br>");
-
+echo'Please confirm your password!<br>';
+die();
 }
 
 
 if(empty($email)){
-
-die("Please enter your email!");
+echo'Please enter your email!';
+die();
 
 }
 
-
 //Let's check if this username is already in use
-
 
 $user_check = mysql_query("SELECT username FROM users WHERE username='$username'");
 
 $do_user_check = mysql_num_rows($user_check);
 
-
 //Now if email is already in use
-
 
 $email_check = mysql_query("SELECT email FROM users WHERE email='$email'");
 
 $do_email_check = mysql_num_rows($email_check);
 
-
 //Now display errors
 
-
 if($do_user_check > 0){
-
-die("Username is already in use!<br>");
-
+echo 'Username is already in use!<br>';
+die();
 }
 
 
 if($do_email_check > 0){
-
-die("Email is already in use!");
+echo'Email is already in use!';
+die();
 
 }
 
-
 //Now let's check does passwords match
 
-
 if($password != $repassword){
-
-die("Passwords don't match!");
-
+include('register.php');
+echo'Passwords do not match!';
+die();
 }else{
 	$encryptme = $_POST['password'];
 
@@ -128,10 +114,7 @@ die("There's little problem: ".mysql_error());
 
 }
 
-
-echo $username.", you are now registered. Thank you!<br><a href=login.php>Login</a> | <a href=index.php>Index</a>";
-
-
+echo"$username",' you are now registered. Click <a href="index.php"> HERE </a> to login';
 
 
 }

@@ -3441,11 +3441,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li {
   position: relative;
-  display: block;
+  display: inline-table;
 }
 .nav > li > a {
   position: relative;
-  display: block;
+  display: inline-table;
   padding: 10px 15px;
 }
 .nav > li > a:hover,
@@ -4344,7 +4344,7 @@ a.badge:focus {
   cursor: pointer;
 }
 a.list-group-item.active > .badge,
-.nav-pills > .active > a > .badge {
+.-pills > .active > a > .badge {
   color: #428bca;
   background-color: #fff;
 }
