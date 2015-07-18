@@ -1,5 +1,3 @@
-
-
 <html>
 
 <head>
@@ -25,9 +23,10 @@
     </div>
     <a class="navbar-brand" href="home_page.php">phpTicket</a>
        <ul class="nav navbar-nav">
-        <li class='active'><a href="home_page.php">Peter Pan Ticket</a></li>
-        <li><a href="./greyhound.php">Greyhound Ticket</a></li>
+        <li><a href="home_page.php">Peter Pan Ticket</a></li>
+        <li class='active'><a href="./greyhound.php">Greyhound Ticket</a></li>
 		<li><a href="./about.php">About</a></li>
+		
 			</ul>
 </div>
 </div>
@@ -43,7 +42,7 @@ Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Pet
 	<br/>
 </table>
 
-<form action="ticket.php" method="POST">
+<form action="ticket_greyhound.php" method="POST">
 			
 Name:
 <br>
