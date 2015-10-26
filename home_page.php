@@ -456,6 +456,5 @@ Tickets are not valid and are not intended for <b> actual</b> use.<br> By checki
 <input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled" />
 <br>
 <br>
-</div>
 
 </form>
