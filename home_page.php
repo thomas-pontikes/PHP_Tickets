@@ -1,5 +1,4 @@
-
-
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,7 +8,6 @@
    	 	<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>PhpTickets</title>
 		<link rel="stylesheet" style="text/css" href="css/bootstrap.css">
 	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script src="js/jquery-1.3.2.js"></script>
@@ -33,14 +31,12 @@
 			</ul>
 </div>
 </div>
-</div>
-<div class="container" align="left">
+<div class="container">
 <table>
-<td>
 <h1>Ticket Generator: Peter Pan</h1><td>
 <a class="btn btn-danger" href="logout.php"> Logout </a>
 <tr><td>
-Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </b></a> online schedule to determine the <b>price, date, and number of transfers</b> (if any).<br>
+Consult the <b><a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan <b><a> online schedule to determine the <b>price, date, and number of transfers</b> (if any).<br>
 
 	<br/>
 </table>
@@ -63,7 +59,7 @@ Date:
 <table style="width:30px">
 <tr>
 	<td>
-	<select class="form-control input-sm" name="date1" id="date1" align="center"style="width: 80px">
+	<select class="form-control input-sm" name="date1" id="date1" style="width: 80px">
 	<option value="01">01</option>
 	<option value="02">02</option>
 	<option value="03">03</option>
@@ -98,7 +94,7 @@ Date:
 </select>
 </td>
 <td>
- <select class="form-control input-sm" name="date2" id="date2" align="center"style="width: 80px">
+ <select class="form-control input-sm" name="date2" id="date2" style="width: 80px">
 	<option value="Jan">Jan</option>
 	<option value="Feb">Feb</option>
 	<option value="Mar">Mar</option>
@@ -114,7 +110,7 @@ Date:
 </select>
 </td>
 <td>
-<select class="form-control input-sm" name="date3" id="date3" align="center"style="width: 80px">
+<select class="form-control input-sm" name="date3" id="date3" style="width: 80px">
 	<option value="14">2014</option>
 	<option value="15">2015</option>
 </select>
@@ -139,7 +135,7 @@ Route Number<br>
 			 
 <br>
 <br>
-		Initial Departure Location<select class="form-control input-sm" name="ticket_origin" id=" ticket_original" width="200" style="width: 200px">
+		Initial Departure Location<select class="form-control input-sm" name="ticket_origin" id="ticket_original" style="width: 200px">
           <option value="ALBANY, NY">Albany, NY</option>
 		  <option value="AMHERST, MA">Amherst, MA</option>
 		  <option value="BALTIMORE DOWNTOWN, MD">Baltimore Downtown, MD</option>
@@ -212,7 +208,7 @@ Route Number<br>
 
 <br>
 
-		Final Destination<select class="form-control input-sm" name="ticket_destination" width="200" style="width: 200px">
+		Final Destination<select class="form-control input-sm" name="ticket_destination" style="width: 200px">
 		  <option value="ALBANY, NY">Albany, NY</option>
 		  <option value="AMHERST, MA">Amherst, MA</option>
 		  <option value="BALTIMORE DOWNTOWN, MD">Baltimore Downtown, MD</option>
@@ -289,7 +285,7 @@ Route Number<br>
 	
 
 
-		Origin<select class="form-control input-sm" name="trip_origin" width="200" style="width: 200px">
+		Origin<select class="form-control input-sm" name="trip_origin" style="width: 200px">
   		  <option value="ALBANY, NY">Albany, NY</option>
   		  <option value="AMHERST, MA">Amherst, MA</option>
   		  <option value="BALTIMORE DOWNTOWN, MD">Baltimore Downtown, MD</option>
@@ -362,7 +358,7 @@ Route Number<br>
 
 
 <br>
-	Destination<select class="form-control input-sm" name="trip_destination" width="200" style="width: 200px">
+	Destination<select class="form-control input-sm" name="trip_destination" style="width: 200px">
 	  <option value="ALBANY, NY">Albany, NY</option>
 	  <option value="AMHERST, MA">Amherst, MA</option>
 	  <option value="BALTIMORE DOWNTOWN, MD">Baltimore Downtown, MD</option>
@@ -432,7 +428,7 @@ Route Number<br>
 
 <br>
 
-	Ticket Number <input type="text" name="number_ticket_1" class="form-controls"placeholder="1"style="width: 35px"> of <input type="text" name="number_ticket_2" class="form-controls"placeholder="1"style="width: 35px">
+	Ticket Number <input type="text" name="number_ticket_1" class="form-controls" placeholder="1" style="width: 35px"> of <input type="text" name="number_ticket_2" class="form-controls" placeholder="1" style="width: 35px">
 <br>
 
 <script type="text/javascript">
@@ -453,5 +449,6 @@ Tickets are not valid and are not intended for <b> actual</b> use.<br> By checki
 <input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled" />
 <br>
 <br>
+</div>
 
 </form>
