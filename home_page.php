@@ -11,7 +11,9 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>PhpTickets</title>
 		<link rel="stylesheet" style="text/css" href="css/bootstrap.css">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="js/jquery-1.3.2.js"></script>
+	
 
 
 
