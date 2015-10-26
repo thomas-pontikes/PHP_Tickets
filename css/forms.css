@@ -26,7 +26,7 @@
 	  }
 
       .form-signin {
-		text-align:left;
+		text-align:center;
         max-width: 400px;
         padding: 29px 99px 59px;
         margin: 0 auto 20px;
@@ -51,7 +51,7 @@
 	  .form-signin input[type="email"] {
  
 		font-size: 16px;
-		text-align:center;
+		text-align:left;
         height: auto;
         margin-bottom: 15px;
         padding: 7px 9px;
