@@ -455,8 +455,8 @@ function checkSubmit(ele, id) {
 
 <h4>(DISCLAIMER)</h4>
 Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>     
-<input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y"></input>
+<input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y">
 <br>
-<input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled"></input>
+<input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled">
 
 
