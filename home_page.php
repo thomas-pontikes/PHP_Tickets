@@ -434,6 +434,7 @@ Route Number<br>
 <br>
 
 <script type="text/javascript">
+$(':checkbox:checked').removeAttr('checked');
 function checkSubmit(ele, id) {
 	x = document.getElementById(id);
 	if (ele.checked == true) x.disabled = false;
