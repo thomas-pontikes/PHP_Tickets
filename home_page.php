@@ -440,6 +440,7 @@ Route Number<br>
 	Ticket Number <input type="text" name="number_ticket_1" class="form-controls" placeholder="1" style="width: 35px"> of <input type="text" name="number_ticket_2" class="form-controls" placeholder="1" style="width: 35px">
 <br>
 </form>
+</div>
 <script type="text/javascript">
 $( document ).ready(function() {
    	$(':checkbox:checked').removeAttr('checked');
@@ -453,8 +454,9 @@ function checkSubmit(ele, id) {
 </script>
 
 <h4>(DISCLAIMER)</h4>
-Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>     <input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y" />
+Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>     
+<input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y"></input>
 <br>
-<input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled" />
+<input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled"></input>
 
 
