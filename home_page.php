@@ -32,9 +32,12 @@
 </div>
 </div>
 <div class="container">
+<h1>Ticket Generator: Peter Pan</h1>
 <table>
-<h1>Ticket Generator: Peter Pan</h1><td>
+<td>
 <a class="btn btn-danger" href="logout.php" style="float:right;"> Logout </a>
+<br>
+<br>
 <tr>
 <td>
 Consult the <a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </a> online schedule to determine the <b> price, date, and number of transfers</b> (if any).<br>
