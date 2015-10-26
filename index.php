@@ -32,7 +32,7 @@
 		  </div>
 	  <div class="q">
         <p>Please Sign In</p>
-		<div>
+		</div>
         <input type="text" name="username" class="input-block-level" placeholder="Username">
         <input type="password" name="password" class="input-block-level" placeholder="Password">
         <button class="btn btn-large btn-primary" type="submit">Sign in</button>
@@ -41,7 +41,8 @@
 		<div class="register">
        <p>To register click <a href="register_account.php">here</a></p>
 	</div>
-      </form>
+      
+</form>
 	 
 
     </div> <!-- /container -->
