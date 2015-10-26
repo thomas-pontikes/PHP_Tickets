@@ -31,7 +31,9 @@
 			</ul>
 </div>
 </div>
+
 <div class="container">
+
 <h1>Ticket Generator: Peter Pan</h1>
 <table>
 <tr>
@@ -44,8 +46,8 @@
 <tr>
 <td>
 Consult the <a class="one" href="http://peterpanbus.com" target="_blank"> Peter Pan </a> online schedule to determine the <b> price, date, and number of transfers</b> (if any).<br>
+<br/>
 
-	<br/>
 </table>
 
 <form action="ticket.php" method="POST">
@@ -437,7 +439,7 @@ Route Number<br>
 
 	Ticket Number <input type="text" name="number_ticket_1" class="form-controls" placeholder="1" style="width: 35px"> of <input type="text" name="number_ticket_2" class="form-controls" placeholder="1" style="width: 35px">
 <br>
-
+</form>
 <script type="text/javascript">
 $( document ).ready(function() {
    	$(':checkbox:checked').removeAttr('checked');
@@ -454,7 +456,5 @@ function checkSubmit(ele, id) {
 Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>     <input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y" />
 <br>
 <input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled" />
-<br>
-<br>
 
-</form>
+
