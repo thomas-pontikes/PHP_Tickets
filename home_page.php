@@ -435,28 +435,28 @@ Route Number<br>
 	  
 	</select>
 
-<br>
+	<br>
 
-	Ticket Number <input type="text" name="number_ticket_1" class="form-controls" placeholder="1" style="width: 35px"> of <input type="text" name="number_ticket_2" class="form-controls" placeholder="1" style="width: 35px">
-<br>
-</form>
-</div>
-<script type="text/javascript">
-$( document ).ready(function() {
-   	$(':checkbox:checked').removeAttr('checked');
- 
-});
-function checkSubmit(ele, id) {
-	x = document.getElementById(id);
-	if (ele.checked == true) x.disabled = false;
-	else x.disabled = true;
-}
-</script>
+		Ticket Number <input type="text" name="number_ticket_1" class="form-controls"placeholder="1"style="width: 35px"> of <input type="text" name="number_ticket_2" class="form-controls"placeholder="1"style="width: 35px">
+	<br>
 
-<h4>(DISCLAIMER)</h4>
-Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>     
-<input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y">
-<br>
-<input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled">
+	<script type="text/javascript">
+	$( document ).ready(function() {
+	   	$(':checkbox:checked').removeAttr('checked');
 
+	});
+	function checkSubmit(ele, id) {
+		x = document.getElementById(id);
+		if (ele.checked == true) x.disabled = false;
+		else x.disabled = true;
+	}
+	</script>
 
+	<h4>(DISCLAIMER)</h4>
+	Tickets are not valid and are not intended for <b> actual</b> use.<br> By checking the box you are acknowledging that this generator is  <b>For Educational Purposes Only --></b>     <input type="checkbox" name="myCheck" onclick="checkSubmit(this, 'mySubmit')" value="y" />
+	<br>
+	<input type="submit" name="submit" value="Submit" class="btn btn-primary"  id="mySubmit" disabled="disabled" />
+	<br>
+	<br>
+
+	</form>
