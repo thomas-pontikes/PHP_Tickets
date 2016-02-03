@@ -363,7 +363,7 @@ $purch_date = date('d',strtotime("-1 days"));
 
 <!-- Begin page background -->
 <div id="pg1Overlay" style="width:100%; height:100%; position:absolute; z-ticket_asset:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
-<div id="pg1"><img src="/ticket_asset/1.png" id="pdf1" style="width:935px; height:1210px; background-color:white;"/><!--[if lt IE 9]><img src="ticket_asset/fallback1.png" id="fallback1" style="width:935px; height:1210px; position:absolute; left:0; "/><![endif]--></div>
+<div id="pg1"><img src="../ticket_asset/1.png" id="pdf1" style="width:935px; height:1210px; background-color:white;"/><!--[if lt IE 9]><img src="ticket_asset/fallback1.png" id="fallback1" style="width:935px; height:1210px; position:absolute; left:0; "/><![endif]--></div>
 
 <!-- End page background -->
 
